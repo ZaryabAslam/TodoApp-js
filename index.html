@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+    .dltbtn{
+        margin: 10px;
+        font-size: 20px;
+       
+        color: darkred;
+        font-weight: bold;
+    }
+    .editbtn{
+        margin: 5px;
+        font-size: 20px;
+        
+        color: green;
+        font-weight: bold;
+    }
+    .lii{
+        font-size: 30px;
+    }
+    .addbtn{
+        margin: 5px;
+        font-size: 20px;
+        
+        color: green;
+        font-weight: bold;
+    }
+    .heading{
+        text-align: center;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 class="heading">TODO APP BY ZARYAB ASLAM</h1>
+        <div>
+            <input type="text" id="input" placeholder="Enter Tasks">
+            <button class="addbtn" onclick="addtask()">Add Task</button>
+            <button class="dltbtn" onclick="dltAll()">Delete All</button>
+        </div>
+        <div>
+            <ul id="List">
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
